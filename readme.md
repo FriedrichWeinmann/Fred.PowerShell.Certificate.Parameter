@@ -13,6 +13,19 @@ It ensures that only certificates with a private key can be passed in and will o
 ## Using it
 
 This library can be used in both c#-based commands (cmdlets) or script-based commands (functions).
+
+> C#
+
+```csharp
+/// <summary>
+/// Certificate to connect with.
+/// </summary>
+[Parameter()]
+public CertificateParameter Certificate
+```
+
+> PowerShell
+
 Example in script:
 
 ```powershell
