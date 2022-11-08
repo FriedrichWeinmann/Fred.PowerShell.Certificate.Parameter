@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>Fred.PowerShell.Parameter.Certificate</Title>
+    <Authors>Friedrich Weinmann</Authors>
+    <Company />
+    <Description>Contains a parameter class for accepting certificate input. PowerShell commands should use it as the expected type and can internally use the input as an X509Certificate2 with private key - resolution of Thumbprint or SubjectName to certificate from the windows stores happens automatically, while also accepting direct certificate objects.</Description>
+    <Copyright>Copyright (c) Friedrich Weinmann 2022</Copyright>
+    <PackageProjectUrl>https://github.com/FriedrichWeinmann/Fred.PowerShell.Certificate.Parameter</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/FriedrichWeinmann/Fred.PowerShell.Certificate.Parameter</RepositoryUrl>
+    <PackageTags>powershell;parameter;certificate</PackageTags>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
